@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerOne">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-jV-1k4">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.12936129660000001" blue="0.15351279100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="102" id="2qm-It-Iet"/>
+                        <constraint firstAttribute="height" constant="61" id="Sqj-bo-2Sw"/>
+                    </constraints>
+                    <state key="normal" title="回调按钮"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2qm-It-Iet"/>
+                            <exclude reference="Sqj-bo-2Sw"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="2qm-It-Iet"/>
+                            <include reference="Sqj-bo-2Sw"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="btnClikc:" destination="-1" eventType="touchUpInside" id="4te-Zv-mDK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-Yp-aHq">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="跳转按钮"/>
+                    <connections>
+                        <action selector="jumpClick:" destination="-1" eventType="touchUpInside" id="FBA-nl-ldx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ucl-Yp-aHq" firstAttribute="width" secondItem="jxe-jV-1k4" secondAttribute="width" id="Ggr-Zo-Ds7"/>
+                <constraint firstItem="jxe-jV-1k4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="94" id="KID-XM-Gih"/>
+                <constraint firstItem="Ucl-Yp-aHq" firstAttribute="height" secondItem="jxe-jV-1k4" secondAttribute="height" id="Kg6-1e-AAB"/>
+                <constraint firstItem="jxe-jV-1k4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="187" id="VT9-RO-L1G"/>
+                <constraint firstItem="Ucl-Yp-aHq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="icz-CN-jty"/>
+                <constraint firstItem="Ucl-Yp-aHq" firstAttribute="top" secondItem="jxe-jV-1k4" secondAttribute="bottom" constant="77" id="oZc-M9-QG6"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="jxe-jV-1k4"/>
+                    <exclude reference="Ucl-Yp-aHq"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="KID-XM-Gih"/>
+                    <exclude reference="VT9-RO-L1G"/>
+                    <exclude reference="Ggr-Zo-Ds7"/>
+                    <exclude reference="Kg6-1e-AAB"/>
+                    <exclude reference="icz-CN-jty"/>
+                    <exclude reference="oZc-M9-QG6"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="jxe-jV-1k4"/>
+                    <include reference="Ucl-Yp-aHq"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="KID-XM-Gih"/>
+                    <include reference="VT9-RO-L1G"/>
+                    <include reference="Ggr-Zo-Ds7"/>
+                    <include reference="Kg6-1e-AAB"/>
+                    <include reference="icz-CN-jty"/>
+                    <include reference="oZc-M9-QG6"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerTwo">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhG-IZ-pGX">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.5" green="0.089302845000000006" blue="0.316571871" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="RR7-fd-u2Q"/>
+                        <constraint firstAttribute="height" constant="50" id="jb7-8n-CIw"/>
+                    </constraints>
+                    <state key="normal" title="创建label"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="RR7-fd-u2Q"/>
+                            <exclude reference="jb7-8n-CIw"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="RR7-fd-u2Q"/>
+                            <include reference="jb7-8n-CIw"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="Yb4-bF-204"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uhG-IZ-pGX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="134" id="Wfd-xT-dha"/>
+                <constraint firstItem="uhG-IZ-pGX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="436" id="ZLP-yC-qVJ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="uhG-IZ-pGX"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Wfd-xT-dha"/>
+                    <exclude reference="ZLP-yC-qVJ"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="uhG-IZ-pGX"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Wfd-xT-dha"/>
+                    <include reference="ZLP-yC-qVJ"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
